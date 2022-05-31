@@ -35,8 +35,8 @@ class _MainScreenState extends State<MainScreen> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            'Its ${lastValue} turn'.toUpperCase(),
-            style: TextStyle(color: Colors.white, fontSize: 58),
+            "It's ${lastValue} turn".toUpperCase(),
+            style: TextStyle(color: Colors.white, fontSize: 36),
           ),
           SizedBox(
             height: 20,
@@ -61,7 +61,7 @@ class _MainScreenState extends State<MainScreen> {
                               gameOver = game.winnerCheck(
                                   lastValue, index, scoreBoard, 3);
                               if (gameOver) {
-                                result = '$lastValue is the winner';
+                                result = '$lastValue winner';
                               }
                               if (lastValue == 'X')
                                 lastValue = 'O';
